@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
+import { AttributebindingComponent } from './attributebinding/attributebinding.component';
+import { EventbindingComponent } from './eventbinding/eventbinding.component';
 
 const routes: Routes = [
   {
@@ -12,6 +14,14 @@ const routes: Routes = [
   {
     path: 'databinding',
     component: DatabindingComponent
+  },
+  {
+    path: 'attributebinding',
+    component: AttributebindingComponent
+  },
+  {
+    path: 'eventbinding',
+    component: EventbindingComponent
   }
 ];
 

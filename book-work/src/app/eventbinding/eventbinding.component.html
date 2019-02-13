@@ -1,0 +1,28 @@
+<div (mousemove) = "move($event)">
+  <img [src] = "imageUrl"
+    (mouseenter) = "mouseGoesIn()"
+    (mouseleave) = "mouseLeft()"
+    (dblclick) = "changeImg()"
+  />
+  <br>
+  double click the picture to change it.
+  <br>
+  The Mouse has {{ mouse }} 
+  <hr> 
+  <button (click)="changeImg()">Change pictures</button>
+  <hr>
+  <input (keyup)="onKeyUp($event)"
+    (keydown)="onKeyDown($event)"
+    (keypress)="keyPress($event)"
+    (blur)="underTheScope($event)"
+    (focus)="underTheScope($event)"
+  >
+  <p>On key up: {{ upValues }}</p>
+  <p>On key down: {{ downValues }}</p>
+  <p>On key press: {{ keypressValue }}</p>
+  <p (mousemove)="move($event)">
+    x coordinates: {{ x }}
+    <br>
+    y coordinates: {{ y }}
+  </p> 
+</div>
