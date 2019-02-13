@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'book-work';
+  title = 'Various small projects from Angular book';
+  subTitle = 'Topics spanning interpolation and other issues'
 }
